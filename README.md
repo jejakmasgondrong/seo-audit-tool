@@ -21,3 +21,4 @@ A simple tool to check basic SEO elements (Title, Meta Description, H1, OG Tags,
 - Web3 integration (Connect Wallet to save audit history on-chain)
 - Broken links checker
 - Core Web Vitals analysis
+# seo-audit-tool
