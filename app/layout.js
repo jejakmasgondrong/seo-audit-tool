@@ -38,7 +38,18 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">{children}
+        <footer className="mt-auto border-t border-gray-800 py-4 text-center">
+          <a
+            href="https://www.linkedin.com/in/rsatriya-wicaksana-56b026ab/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-gray-500 hover:text-emerald-400 transition-colors"
+          >
+            Built by RSatriya · Contact Me
+          </a>
+        </footer>
+      </body>
     </html>
   );
 }
