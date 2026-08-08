@@ -12,6 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://seo-audit-tool-lac.vercel.app"),
   title: "SEO Audit Tool — Free Website SEO Checker & Analyzer",
   description:
     "Free SEO audit tool for developers. Check meta tags, analyze headings, find canonical URLs, and improve your website search engine optimization.",
@@ -20,7 +21,7 @@ export const metadata = {
     title: "SEO Audit Tool — Free Website SEO Checker & Analyzer",
     description:
       "Free SEO audit tool for developers. Check meta tags, analyze headings, find canonical URLs, and improve your website search engine optimization.",
-    url: "https://seo-audit-tool.vercel.app",
+    url: "https://seo-audit-tool-lac.vercel.app",
     type: "website",
     siteName: "SEO Audit Tool",
   },
@@ -39,6 +40,21 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              name: "SEO Audit Tool",
+              description:
+                "Free SEO audit tool for developers. Check meta tags, headings, canonical URLs, and on-page SEO.",
+              applicationCategory: "DeveloperApplication",
+              url: "https://seo-audit-tool-lac.vercel.app",
+              operatingSystem: "Any",
+            }),
+          }}
+        />
         <footer className="mt-auto border-t border-gray-800 py-4 text-center">
           <a
             href="https://www.linkedin.com/in/rsatriya-wicaksana-56b026ab/"

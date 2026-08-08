@@ -57,6 +57,42 @@ export default function Home() {
           </button>
         </form>
 
+<p className="text-sm text-gray-400 leading-relaxed mb-6">
+          This tool runs a quick on-page SEO scan for any public URL. Paste a
+          website address, click Audit, and get an instant read on the page
+          title, meta description, heading structure, Open Graph tags, and
+          canonical URL. It is built for developers and SEO specialists who
+          want a fast baseline check before publishing or optimizing a page.
+        </p>
+
+        <div className="mb-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-400">
+          <div className="rounded-lg border border-gray-700 bg-gray-800 p-4">
+            <h2 className="font-semibold text-green-400 mb-1">On-Page Elements</h2>
+            <p>
+              Verifies title, meta description, H1 presence, Open Graph title,
+              and canonical URL handling in a single request.
+            </p>
+          </div>
+          <div className="rounded-lg border border-gray-700 bg-gray-800 p-4">
+            <h2 className="font-semibold text-green-400 mb-1">No Sign-up Needed</h2>
+            <p>
+              Free and open to everyone. Ideal for smoke-testing your pages
+              during development or before shipping to production.
+            </p>
+          </div>
+        </div>
+
+        <p className="text-sm text-gray-400 leading-relaxed mb-6">
+          Why audit? Most SEO problems are easy to fix once you can see them:
+          a missing meta description hurts click-through rates, an empty title
+          confuses search engines, and a broken canonical can split your page
+          ranking between duplicate URLs. Running a quick check before you
+          deploy helps you catch these issues while they are still cheap to
+          correct. For deeper analysis, pair this tool with a full site crawl
+          and review your robots.txt and sitemap, then focus on content quality
+          and page speed as the next layer of optimization.
+        </p>
+
         {error && <p className="text-red-400 mb-4">Error: {error}</p>}
 
         {data && (
