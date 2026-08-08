@@ -1,5 +1,5 @@
 export async function GET() {
-  const baseUrl = "https://seo-audit-tool.vercel.app";
+  const baseUrl = "https://seo-audit-tool-lac.vercel.app";
 
   const routes = ["/", "/api/audit", "/api/check-meta", "/api/check-headings"];
 
